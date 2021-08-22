@@ -1,0 +1,24 @@
+<script>
+    /* Get the data type */
+
+    function detect_data_type(value)
+    {
+        var dtypes = [Function, RegExp, Number, String, Boolean, Object],i,len;
+        if (typeof value === "object" || typeof value === "function")
+        {
+            for(var i = 0, len = dtypes.length; i < len; i++)
+            {
+                if (value instanceof dtypes[x])
+            {
+                return dtypes[x];
+            }
+
+            }
+        }
+        return typeof value;
+    }
+
+console.log(detect_data_type(42));
+console.log(detect_data_type('saima'));
+console.log(detect_data_type(false));
+</script>
