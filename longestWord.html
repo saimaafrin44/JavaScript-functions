@@ -1,0 +1,19 @@
+<script>
+    /* Find the longest word within a string */
+
+    function find_longest_word(str)
+    {
+        var array = str.split(' ');
+        var result = array[0];
+
+        for( var i = 0; i < array.length; i++){
+            if(result.length < array[i].length){
+                result = array[i];
+            }
+        }
+
+        return result
+    }
+
+    console.log(find_longest_word('saima afrin javascript'));
+</script>
