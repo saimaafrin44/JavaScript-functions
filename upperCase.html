@@ -1,0 +1,25 @@
+<script>
+    /* Converts the first letter of each word of a string in upper case */
+
+    function uppercase(str)
+    {
+        var array = str.split(' ') //concert the string to array
+        //console.log(array)
+        var newArray = []; 
+
+        for (var i = 0; i < array.length; i++){
+            newArray.push(array[i].charAt(0).toUpperCase()+array[i].slice(1));
+        
+            //console.log(newArray)
+        }
+    
+        return newArray.join(' ');
+        
+    }
+
+    console.log(uppercase("saima afrin"));
+
+
+
+
+</script>
